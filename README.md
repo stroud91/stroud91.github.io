@@ -1,4 +1,5 @@
-Ledian F.
+Hello I am Ledian
+
 Full Stack Software Engineer | Specializing in Node.js, JavaScript, Python, Flask, React, PostgreSQL, Sequelize | Exploring Machine Learning, AWS, and Vue.js
 
 About:
