@@ -5,10 +5,66 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
-      <style>
-        /* Additional styles */
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background: url('./assets/css/images/background.jpg') no-repeat center center/cover;
+            color: white;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.5em;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+        }
+
+        section {
+            padding: 60px 20px;
+            background: white;
+            margin-bottom: 20px;
+        }
+
+        .wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
         .card {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             transition: 0.3s;
             width: 48%;
             display: inline-block;
@@ -17,15 +73,19 @@
         }
 
         .card:hover {
-            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
 
-        .container {
-            padding: 2px 16px;
+        .card img {
+            width: 100%;
+        }
+
+        .card .container {
+            padding: 16px;
         }
 
         .language-icons img {
-            height: 40px; /* Adjust based on your preference */
+            height: 40px;
             margin-right: 10px;
         }
 
@@ -33,109 +93,103 @@
             .card {
                 width: 100%;
             }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
         }
     </style>
 </head>
-<body class="homepage is-preload">
-    <div id="page-wrapper">
+<body>
+    <header>
+        <img src="./assets/css/images/3x3ledian_9806.jpg" alt="Ledian FEKAJ Logo" />
+        <h1>Ledian FEKAJ</h1>
+        <p>Full Stack Software Engineer | Node.js | JavaScript | Python | Flask | React | PostgreSQL</p>
+        <nav>
+            <ul>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <!-- Header -->
-        <section id="header" class="wrapper">
-            <div id="logo">
-                <img src="./assets/css/images/3x3ledian_9806.jpg" alt="Ledian FEKAJ Logo" />
-                <h1>Ledian FEKAJ</h1>
-                <p>Full Stack Software Engineer | Node.js | JavaScript | Python | Flask | React | PostgreSQL</p>
-            </div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                </ul>
-            </nav>
-        </section>
-
- <!-- Projects -->
-        <section id="projects" class="wrapper style2">
-            <div class="title">Projects</div>
-            <div class="container" style="text-align:center;">
-                <!-- Project 1 -->
-                <div class="card">
-                    <a href="https://dietcrusher.onrender.com">
-                        <img src="./assets/css/images/2024-03-16 11_32_06-Diet Crusher.png" alt="Diet Crusher Project Screenshot" style="width:100%">
-                    </a>
-                    <div class="container">
-                        <h3><a href="https://dietcrusher.onrender.com">Diet Crusher</a></h3>
-                        <p>Comprehensive user registration and profile management system.</p>
-                        <div class="language-icons">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" alt="Python" />
-                            <img  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original-wordmark.svg" alt="Flask" />         
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlalchemy/sqlalchemy-original-wordmark.svg" alt="SQL Alchemy"/>
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" alt="React" />
-                        </div>
-                    </div>
-                </div>
-                <!-- Project 2 -->
-                <div class="card">
-                    <a href="https://yelping.onrender.com">
-                        <img src="./assets/css/images/2024-03-16 11_29_14-Yelping.png" alt="Yelping Project Screenshot" style="width:100%">
-                    </a>
-                    <div class="container">
-                        <h3><a href="https://yelping.onrender.com">Yelping</a></h3>
-                        <p>Responsive web application with a user-friendly interface.</p>
-                        <div class="language-icons">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript"/>
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" alt="Node.js" />            
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg" alt="Express.js" />
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" alt="React" />
-                        </div>
+    <!-- Projects -->
+    <section id="projects" class="wrapper">
+        <div class="title">Projects</div>
+        <div class="container">
+            <div class="card">
+                <a href="https://dietcrusher.onrender.com">
+                    <img src="./assets/css/images/2024-03-16 11_32_06-Diet Crusher.png" alt="Diet Crusher Project Screenshot">
+                </a>
+                <div class="container">
+                    <h3><a href="https://dietcrusher.onrender.com">Diet Crusher</a></h3>
+                    <p>Comprehensive user registration and profile management system.</p>
+                    <div class="language-icons">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" alt="Python" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original-wordmark.svg" alt="Flask" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlalchemy/sqlalchemy-original-wordmark.svg" alt="SQL Alchemy"/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" alt="React" />
                     </div>
                 </div>
             </div>
-        </section>
-
-        <!-- Skills -->
-        <section id="skills" class="wrapper style3">
-            <div class="title">Skills</div>
-            <div class="container">
-                 <p>Full Stack Software Engineer | Node.js | JavaScript | Python | Flask | React | PostgreSQL</p>
+            <div class="card">
+                <a href="https://yelping.onrender.com">
+                    <img src="./assets/css/images/2024-03-16 11_29_14-Yelping.png" alt="Yelping Project Screenshot">
+                </a>
+                <div class="container">
+                    <h3><a href="https://yelping.onrender.com">Yelping</a></h3>
+                    <p>Responsive web application with a user-friendly interface.</p>
+                    <div class="language-icons">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript"/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" alt="Node.js" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg" alt="Express.js" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" alt="React" />
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Education -->
-        <section id="education" class="wrapper style1">
-            <div class="title">Education</div>
-            <div class="container">
-                <ul>
-                    <li>App Academy: Software Engineer, Computer and Information Sciences (Dec 2022 - Dec 2023)</li>
-                    <li>Centro de Formación Técnica Manpower: Certificate, Warehouse Team Lead (2020)</li>
-                    <li>Cisco Networking Academy: IT essentials, Information Technology (2017); CCNA, System, Networking, and LAN/WAN Management/Manager (2017)</li>
-                    <li>Universiteti Bujqësor i Tiranës: Agricultural Food Technology Engineer, Biotechnology (Oct 2010 - Aug 2014)</li>
-                </ul>
-            </div>
-        </section>
+    <!-- Skills -->
+    <section id="skills" class="wrapper">
+        <div class="title">Skills</div>
+        <div class="container">
+            <p>Full Stack Software Engineer | Node.js | JavaScript | Python | Flask | React | PostgreSQL</p>
+        </div>
+    </section>
 
-        <!-- Contact -->
-        <section id="footer" class="wrapper">
-            <div class="title">Contact</div>
-            <div class="container">
-                <p>Email: ingofubt2014@gmail.com</p>
-                <p>Phone: 570-807-4760</p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/ledian-f-47b586143">ledian-f-47b586143</a></p>
-                <p>GitHub: <a href="https://github.com/stroud91">stroud91</a></p>
-            </div>
-        </section>
+    <!-- Education -->
+    <section id="education" class="wrapper">
+        <div class="title">Education</div>
+        <div class="container">
+            <ul>
+                <li>App Academy: Software Engineer, Computer and Information Sciences (Dec 2022 - Dec 2023)</li>
+                <li>Centro de Formación Técnica Manpower: Certificate, Warehouse Team Lead (2020)</li>
+                <li>Cisco Networking Academy: IT essentials, Information Technology (2017); CCNA, System, Networking, and LAN/WAN Management/Manager (2017)</li>
+                <li>Universiteti Bujqësor i Tiranës: Agricultural Food Technology Engineer, Biotechnology (Oct 2010 - Aug 2014)</li>
+            </ul>
+        </div>
+    </section>
 
-    </div>
+    <!-- Contact -->
+    <section id="contact" class="wrapper">
+        <div class="title">Contact</div>
+        <div class="container">
+            <p>Email: ingofubt2014@gmail.com</p>
+            <p>Phone: 570-807-4760</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/ledian-f-47b586143">ledian-f-47b586143</a></p>
+            <p>GitHub: <a href="https://github.com/stroud91">stroud91</a></p>
+        </div>
+    </section>
 
-    <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.dropotron.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-
 </body>
 </html>
