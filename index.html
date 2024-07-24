@@ -7,39 +7,50 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: #555;
             background: #f4f4f4;
             margin: 0;
             padding: 0;
-            color: #333;
         }
 
         header {
             background: url('./assets/css/images/background.jpg') no-repeat center center/cover;
-            color: white;
+            color: #fff;
             height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
             text-align: center;
         }
 
         header h1 {
             font-size: 3em;
-            margin: 0;
+            margin: 0.5em 0;
         }
 
         header p {
             font-size: 1.5em;
-            margin: 0;
+            margin: 0.5em 0;
+        }
+
+        nav {
+            background: rgba(0, 0, 0, 0.7);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
         }
 
         nav ul {
             list-style: none;
             padding: 0;
+            margin: 0;
             display: flex;
             justify-content: center;
-            background: rgba(0, 0, 0, 0.5);
         }
 
         nav ul li {
@@ -48,13 +59,15 @@
 
         nav ul li a {
             text-decoration: none;
-            color: white;
+            color: #fff;
             font-size: 1.2em;
+            padding: 15px 10px;
+            display: block;
         }
 
         section {
             padding: 60px 20px;
-            background: white;
+            background: #fff;
             margin-bottom: 20px;
         }
 
@@ -70,6 +83,7 @@
             display: inline-block;
             margin: 1%;
             vertical-align: top;
+            background: #fff;
         }
 
         .card:hover {
